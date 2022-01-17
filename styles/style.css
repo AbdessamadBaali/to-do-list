@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(30deg, #249c76,#32a39a,#4090a8);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+h1 {
+  color: #2f3338da;
+}
+/* the container of all the my element in the page */
+.w-75 {
+  background: #eeeeee2c;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+/* the rid itmes  */
+.w-75 #newTask, #content-task {
+  background: #0b94ca5d;
+  height: 80px;
+  width: 95%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.w-75 #newTask #taskToDo{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  padding: 15px;
+}
+/* the rid itmes  */
+#content-task {
+  background: linen;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 500px;
+  overflow-y: scroll;
+}
+#task {
+  width: 100%;
+}
+#task i {
+  cursor: pointer;
+}
+#theTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffd900da;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 30px 0;
+  margin: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+#theTask::before{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  border-bottom: 1px solid #000;
+  width: 90%
+}
+.taskName {  cursor: pointer;}
+.completed { text-decoration: line-through}
